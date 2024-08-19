@@ -1,0 +1,40 @@
+{
+  "name": "fond-of-kudu/kletties-payment-connector",
+  "description": "Handle payment-selection for klettie items.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pascal Fischer",
+      "email": "p-fischer@gmx.net"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "spryker/payment-extension": "^1.0.0",
+    "fond-of-oryx/prepayment": "^1.0.0 || ^2.0.0"
+  },
+  "require-dev": {
+    "fond-of-codeception/spryker": "*",
+    "spryker/code-sniffer": "*",
+    "spryker-sdk/phpstan-spryker": "*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "FondOfKudu\\": "src/FondOfKudu/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "FondOfKudu\\": "tests/FondOfKudu/",
+      "Generated\\": "src/Generated/"
+    }
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}
